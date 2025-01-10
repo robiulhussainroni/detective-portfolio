@@ -1,0 +1,55 @@
+.section--hero {
+  height: 50vh;
+  background-image: linear-gradient(to bottom right, #222, #333);
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 3.2rem;
+  align-items: center;
+  border-radius: 90px 100px 35px 80px;
+  position: relative;
+  box-shadow: -44px 44px 0px rgba(77, 211, 177, 0.3);
+}
+
+.section--hero::after {
+  content: "";
+  display: block;
+  background-color: #555;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  right: -40px;
+  bottom: -40px;
+  z-index: -1;
+}
+
+.section--hero::before {
+  content: "";
+  display: block;
+  background-color: #555;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  left: -40px;
+  top: -40px;
+  z-index: -1;
+}
+.section--hero .heading--primary {
+  display: inline-block;
+  border-bottom: 5px solid #1098ad;
+  margin: 2.4rem;
+}
+
+.hero-description {
+  font-size: 3rem;
+  line-height: 1.8;
+}
+
+.special-line {
+  display: block;
+  font-family: serif;
+  letter-spacing: 30px;
+  text-align: center;
+  margin-top: 1.2rem;
+}
